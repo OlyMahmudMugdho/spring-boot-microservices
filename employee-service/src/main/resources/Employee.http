@@ -1,0 +1,13 @@
+### Add an employee
+POST http://localhost:8081/employee
+Content-Type: application/json
+
+{
+  "id" : 1,
+  "name" : "M. Oly Mahmud",
+  "departmentId" : 1
+}
+
+### Get an employee
+GET http://localhost:8081/employee/1
+Content-Type: application/json
