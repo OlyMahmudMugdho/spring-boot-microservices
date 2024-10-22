@@ -1,0 +1,13 @@
+### Add a department
+POST http://localhost:8082/department
+Content-Type: application/json
+
+{
+  "departmentId": 1,
+  "name": "Engineering"
+}
+
+### Get a department
+GET http://localhost:8082/department/1
+Content-Type: application/json
+
