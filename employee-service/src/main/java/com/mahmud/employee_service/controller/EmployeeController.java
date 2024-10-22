@@ -1,5 +1,6 @@
 package com.mahmud.employee_service.controller;
 
+import com.mahmud.employee_service.dto.EmployeeResponse;
 import com.mahmud.employee_service.model.Employee;
 import com.mahmud.employee_service.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/{employeeId}")
-    public Employee getEmployee(@PathVariable Long employeeId) {
+    public EmployeeResponse getEmployee(@PathVariable Long employeeId) {
         return employeeService.getEmployeeById(employeeId);
     }
 
